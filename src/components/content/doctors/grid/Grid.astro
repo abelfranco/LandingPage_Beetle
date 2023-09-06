@@ -5,25 +5,29 @@ import Card from "@components/base/Card.astro";
 <div class="grid md:grid-cols-3 ltablet:grid-cols-3 lg:grid-cols-3 gap-x-6 ptablet:gap-x-4 gap-y-16 pt-10">
   <div x-show="activeCategory === 'all' || activeCategory === 'cardiology'">
     <Card class="'p-4'">
-      <div
-        class="relative w-full h-40 rounded-lg bg-muted-200 dark:bg-muted-800"
-      >
-        <img
-          class="absolute bottom-0 inset-x-0 mx-auto w-full max-w-[170px] ptablet:max-w-[150px]"
-          src="/img/illustrations/doctors/doctor-1.svg"
-          alt="Doctor"
-        />
+    <div class="relative w-full h-40 rounded-lg bg-muted-200 dark:bg-muted-800">
+      <img
+        class="absolute bottom-0 inset-x-0 mx-auto rounded-lg p-3 w-full max-w-[270px] ptablet:max-w-[150px]"
+        src="/img/illustrations/doctors/doctor-1.svg"
+        alt="Doctor"
+      />
+      <div class="absolute inset-0 flex items-center rounded-lg p-3 justify-center h-50 bg-black bg-opacity-60 text-white">
+        <div class="w-60% text-1xl font-semibold p-2  text-white">Launching Soon</div>
+        <div class="w-40% text-xs flex flex-col items-center justify-center border p-3 border-white rounded-lg">
+          <p class="text-rose-500">Sep</p>
+          <p>12</p>
+        </div>
       </div>
+    </div>
       <div class="font-sans mt-3">
         <h4 class="font-semibold text-muted-800 dark:text-muted-100">
-          Dr. Melissa Thorman
+          The Art of Data-Driven Decision Making
         </h4>
-        <p class="text-sm text-muted-400">Cardiologist</p>
+
       </div>
       <div class="mt-2">
         <p class="text-sm ptablet:text-xs text-muted-500 dark:text-muted-400">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ergo illi
-          intellegunt quid
+          Implement AI-powered data analytics tools to enhance decision-making accuracy and speed.
         </p>
       </div>
       <div class="flex items-center justify-between font-sans mt-3">
@@ -36,23 +40,18 @@ import Card from "@components/base/Card.astro";
             ></i>
           </button>
           <button
-            tooltip="Send message"
+            tooltip="Share"
             class="h-8 w-8 rounded-full text-muted-400 hover:text-primary-500 hover:enabled:bg-muted-100 dark:hover:enabled:bg-muted-800 flex items-center justify-center tw-accessiblity transition-colors duration-300"
           >
-            <i class="iconify w-4 h-4" data-icon="ph:chat-circle-duotone"></i>
+            <i class="iconify w-4 h-4" data-icon="ph:share-duotone"></i>
           </button>
-          <button
-            tooltip="View profile"
-            class="h-8 w-8 rounded-full text-muted-400 hover:text-primary-500 hover:enabled:bg-muted-100 dark:hover:enabled:bg-muted-800 flex items-center justify-center tw-accessiblity transition-colors duration-300"
-          >
-            <i class="iconify w-4 h-4" data-icon="ph:user-duotone"></i>
-          </button>
+          
         </div>
         <div class="flex items-center justify-end gap-2">
-          <i class="iconify w-4 h-4 text-yellow-400" data-icon="uiw:star-on"
+          <i class="iconify w-4 h-4 text-primary-600" data-icon="uiw:time"
           ></i>
           <span class="font-semibold text-xs text-muted-500 dark:text-muted-400"
-            >4.8/5</span
+            >5 min of lecture</span
           >
         </div>
       </div>
@@ -61,25 +60,29 @@ import Card from "@components/base/Card.astro";
   <!-- Doctor -->
   <div x-show="activeCategory === 'all' || activeCategory === 'gynaecology'">
     <Card class="'p-4'">
-      <div
-        class="relative w-full h-40 rounded-lg bg-muted-200 dark:bg-muted-800"
-      >
+      <div class="relative w-full h-40 rounded-lg bg-muted-200 dark:bg-muted-800">
         <img
-          class="absolute bottom-0 inset-x-0 mx-auto w-full max-w-[170px] ptablet:max-w-[150px]"
-          src="/img/illustrations/doctors/doctor-2.svg"
+          class="absolute bottom-0 inset-x-0 mx-auto rounded-lg p-3 w-full max-w-[270px] ptablet:max-w-[150px]"
+          src="/img/illustrations/doctors/doctor-1.svg"
           alt="Doctor"
         />
+        <div class="absolute inset-0 flex items-center rounded-lg p-3 justify-center h-50 bg-black bg-opacity-60 text-white">
+          <div class="w-60% text-1xl font-semibold p-2  text-white">Launching Soon</div>
+          <div class="w-40% text-xs flex flex-col items-center justify-center border p-3 border-white rounded-lg">
+            <p class="text-rose-500">Sep</p>
+            <p>12</p>
+          </div>
+        </div>
       </div>
       <div class="font-sans mt-3">
         <h4 class="font-semibold text-muted-800 dark:text-muted-100">
-          Dr. Aaron Zimmerman
+          Unlocking Innovation: Strategies for Tech Startups
         </h4>
-        <p class="text-sm text-muted-400">Gynaecologist</p>
+        
       </div>
       <div class="mt-2">
         <p class="text-sm ptablet:text-xs text-muted-500 dark:text-muted-400">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ergo illi
-          intellegunt quid
+          Leverage AI to identify emerging trends and technologies, providing startups with insights for innovation.
         </p>
       </div>
       <div class="flex items-center justify-between font-sans mt-3">
@@ -92,23 +95,18 @@ import Card from "@components/base/Card.astro";
             ></i>
           </button>
           <button
-            tooltip="Send message"
+            tooltip="Share"
             class="h-8 w-8 rounded-full text-muted-400 hover:text-primary-500 hover:enabled:bg-muted-100 dark:hover:enabled:bg-muted-800 flex items-center justify-center tw-accessiblity transition-colors duration-300"
           >
-            <i class="iconify w-4 h-4" data-icon="ph:chat-circle-duotone"></i>
+            <i class="iconify w-4 h-4" data-icon="ph:share-duotone"></i>
           </button>
-          <button
-            tooltip="View profile"
-            class="h-8 w-8 rounded-full text-muted-400 hover:text-primary-500 hover:enabled:bg-muted-100 dark:hover:enabled:bg-muted-800 flex items-center justify-center tw-accessiblity transition-colors duration-300"
-          >
-            <i class="iconify w-4 h-4" data-icon="ph:user-duotone"></i>
-          </button>
+          
         </div>
         <div class="flex items-center justify-end gap-2">
-          <i class="iconify w-4 h-4 text-yellow-400" data-icon="uiw:star-on"
+          <i class="iconify w-4 h-4 text-primary-600" data-icon="uiw:time"
           ></i>
           <span class="font-semibold text-xs text-muted-500 dark:text-muted-400"
-            >4.4/5</span
+            >7 min of lecture</span
           >
         </div>
       </div>
@@ -117,26 +115,33 @@ import Card from "@components/base/Card.astro";
   <!-- Doctor -->
   <div x-show="activeCategory === 'all' || activeCategory === 'neurology'">
     <Card class="'p-4'">
-      <div
-        class="relative w-full h-40 rounded-lg bg-muted-200 dark:bg-muted-800"
-      >
+      <div class="relative w-full h-40 rounded-lg bg-muted-200 dark:bg-muted-800">
         <img
-          class="absolute bottom-0 inset-x-0 mx-auto w-full max-w-[170px] ptablet:max-w-[150px]"
-          src="/img/illustrations/doctors/doctor-3.svg"
+          class="absolute bottom-0 inset-x-0 mx-auto rounded-lg p-3 w-full max-w-[270px] ptablet:max-w-[150px]"
+          src="/img/illustrations/doctors/doctor-1.svg"
           alt="Doctor"
         />
+        <div class="absolute inset-0 flex items-center rounded-lg p-3 justify-center h-50 bg-black bg-opacity-60 text-white">
+          <div class="w-60% text-1xl font-semibold p-2  text-white">Launching Soon</div>
+          <div class="w-40% text-xs flex flex-col items-center justify-center border p-3 border-white rounded-lg">
+            <p class="text-rose-500">Sep</p>
+            <p>12</p>
+          </div>
+        </div>
       </div>
       <div class="font-sans mt-3">
         <h4 class="font-semibold text-muted-800 dark:text-muted-100">
-          Dr. Michael Harris
+          Strategic Planning: Charting the Course for Success
         </h4>
-        <p class="text-sm text-muted-400">Neurologist</p>
+      
       </div>
       <div class="mt-2">
         <p class="text-sm ptablet:text-xs text-muted-500 dark:text-muted-400">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ergo illi
-          intellegunt quid
+          Utilize AI-driven market analysis tools for more precise strategic planning
         </p>
+        <div>
+          .
+          </div>
       </div>
       <div class="flex items-center justify-between font-sans mt-3">
         <div class="flex items-center gap-2">
@@ -148,23 +153,18 @@ import Card from "@components/base/Card.astro";
             ></i>
           </button>
           <button
-            tooltip="Send message"
+            tooltip="Share"
             class="h-8 w-8 rounded-full text-muted-400 hover:text-primary-500 hover:enabled:bg-muted-100 dark:hover:enabled:bg-muted-800 flex items-center justify-center tw-accessiblity transition-colors duration-300"
           >
-            <i class="iconify w-4 h-4" data-icon="ph:chat-circle-duotone"></i>
+            <i class="iconify w-4 h-4" data-icon="ph:share-duotone"></i>
           </button>
-          <button
-            tooltip="View profile"
-            class="h-8 w-8 rounded-full text-muted-400 hover:text-primary-500 hover:enabled:bg-muted-100 dark:hover:enabled:bg-muted-800 flex items-center justify-center tw-accessiblity transition-colors duration-300"
-          >
-            <i class="iconify w-4 h-4" data-icon="ph:user-duotone"></i>
-          </button>
+          
         </div>
         <div class="flex items-center justify-end gap-2">
-          <i class="iconify w-4 h-4 text-yellow-400" data-icon="uiw:star-on"
+          <i class="iconify w-4 h-4 text-primary-600" data-icon="uiw:time"
           ></i>
           <span class="font-semibold text-xs text-muted-500 dark:text-muted-400"
-            >5/5</span
+            >8 min of lecture</span
           >
         </div>
       </div>
@@ -173,25 +173,29 @@ import Card from "@components/base/Card.astro";
   <!-- Doctor -->
   <div x-show="activeCategory === 'all' || activeCategory === 'dermatology'">
     <Card class="'p-4'">
-      <div
-        class="relative w-full h-40 rounded-lg bg-muted-200 dark:bg-muted-800"
-      >
+      <div class="relative w-full h-40 rounded-lg bg-muted-200 dark:bg-muted-800">
         <img
-          class="absolute bottom-0 inset-x-0 mx-auto w-full max-w-[170px] ptablet:max-w-[150px]"
-          src="/img/illustrations/doctors/doctor-4.svg"
+          class="absolute bottom-0 inset-x-0 mx-auto rounded-lg p-3 w-full max-w-[270px] ptablet:max-w-[150px]"
+          src="/img/illustrations/doctors/doctor-1.svg"
           alt="Doctor"
         />
+        <div class="absolute inset-0 flex items-center rounded-lg p-3 justify-center h-50 bg-black bg-opacity-60 text-white">
+          <div class="w-60% text-1xl font-semibold p-2  text-white">Launching Soon</div>
+          <div class="w-40% text-xs flex flex-col items-center justify-center border p-3 border-white rounded-lg">
+            <p class="text-rose-500">Sep</p>
+            <p>12</p>
+          </div>
+        </div>
       </div>
       <div class="font-sans mt-3">
         <h4 class="font-semibold text-muted-800 dark:text-muted-100">
-          Dr. Eliana Dasilva
+          Navigating the Challenges of Project Management
         </h4>
-        <p class="text-sm text-muted-400">Dermatologist</p>
+        
       </div>
       <div class="mt-2">
         <p class="text-sm ptablet:text-xs text-muted-500 dark:text-muted-400">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ergo illi
-          intellegunt quid
+          Employ AI-driven project management platforms to streamline project workflows and optimize resource allocation.
         </p>
       </div>
       <div class="flex items-center justify-between font-sans mt-3">
@@ -204,23 +208,18 @@ import Card from "@components/base/Card.astro";
             ></i>
           </button>
           <button
-            tooltip="Send message"
+            tooltip="Share"
             class="h-8 w-8 rounded-full text-muted-400 hover:text-primary-500 hover:enabled:bg-muted-100 dark:hover:enabled:bg-muted-800 flex items-center justify-center tw-accessiblity transition-colors duration-300"
           >
-            <i class="iconify w-4 h-4" data-icon="ph:chat-circle-duotone"></i>
+            <i class="iconify w-4 h-4" data-icon="ph:share-duotone"></i>
           </button>
-          <button
-            tooltip="View profile"
-            class="h-8 w-8 rounded-full text-muted-400 hover:text-primary-500 hover:enabled:bg-muted-100 dark:hover:enabled:bg-muted-800 flex items-center justify-center tw-accessiblity transition-colors duration-300"
-          >
-            <i class="iconify w-4 h-4" data-icon="ph:user-duotone"></i>
-          </button>
+          
         </div>
         <div class="flex items-center justify-end gap-2">
-          <i class="iconify w-4 h-4 text-yellow-400" data-icon="uiw:star-on"
+          <i class="iconify w-4 h-4 text-primary-600" data-icon="uiw:time"
           ></i>
           <span class="font-semibold text-xs text-muted-500 dark:text-muted-400"
-            >4.8/5</span
+            >5 min of lecture</span
           >
         </div>
       </div>
@@ -229,25 +228,29 @@ import Card from "@components/base/Card.astro";
   <!-- Doctor -->
   <div x-show="activeCategory === 'all' || activeCategory === 'general'">
     <Card class="'p-4'">
-      <div
-        class="relative w-full h-40 rounded-lg bg-muted-200 dark:bg-muted-800"
-      >
+      <div class="relative w-full h-40 rounded-lg bg-muted-200 dark:bg-muted-800">
         <img
-          class="absolute bottom-0 inset-x-0 mx-auto w-full max-w-[170px] ptablet:max-w-[150px]"
-          src="/img/illustrations/doctors/doctor-5.svg"
+          class="absolute bottom-0 inset-x-0 mx-auto rounded-lg p-3 w-full max-w-[270px] ptablet:max-w-[150px]"
+          src="/img/illustrations/doctors/doctor-1.svg"
           alt="Doctor"
         />
+        <div class="absolute inset-0 flex items-center rounded-lg p-3 justify-center h-50 bg-black bg-opacity-60 text-white">
+          <div class="w-60% text-1xl font-semibold p-2  text-white">Launching Soon</div>
+          <div class="w-40% text-xs flex flex-col items-center justify-center border p-3 border-white rounded-lg">
+            <p class="text-rose-500">Sep</p>
+            <p>12</p>
+          </div>
+        </div>
       </div>
       <div class="font-sans mt-3">
         <h4 class="font-semibold text-muted-800 dark:text-muted-100">
-          Dr. Clark Novak
+          Revolutionizing Education: 2050's Online Education
         </h4>
-        <p class="text-sm text-muted-400">Generalist</p>
+        
       </div>
       <div class="mt-2">
         <p class="text-sm ptablet:text-xs text-muted-500 dark:text-muted-400">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ergo illi
-          intellegunt quid
+          Integrate AI-powered educational tools for personalized learning experiences and data-driven instruction.
         </p>
       </div>
       <div class="flex items-center justify-between font-sans mt-3">
@@ -260,23 +263,18 @@ import Card from "@components/base/Card.astro";
             ></i>
           </button>
           <button
-            tooltip="Send message"
+            tooltip="Share"
             class="h-8 w-8 rounded-full text-muted-400 hover:text-primary-500 hover:enabled:bg-muted-100 dark:hover:enabled:bg-muted-800 flex items-center justify-center tw-accessiblity transition-colors duration-300"
           >
-            <i class="iconify w-4 h-4" data-icon="ph:chat-circle-duotone"></i>
+            <i class="iconify w-4 h-4" data-icon="ph:share-duotone"></i>
           </button>
-          <button
-            tooltip="View profile"
-            class="h-8 w-8 rounded-full text-muted-400 hover:text-primary-500 hover:enabled:bg-muted-100 dark:hover:enabled:bg-muted-800 flex items-center justify-center tw-accessiblity transition-colors duration-300"
-          >
-            <i class="iconify w-4 h-4" data-icon="ph:user-duotone"></i>
-          </button>
+          
         </div>
         <div class="flex items-center justify-end gap-2">
-          <i class="iconify w-4 h-4 text-yellow-400" data-icon="uiw:star-on"
+          <i class="iconify w-4 h-4 text-primary-600" data-icon="uiw:time"
           ></i>
           <span class="font-semibold text-xs text-muted-500 dark:text-muted-400"
-            >4.5/5</span
+            >5 min of lecture</span
           >
         </div>
       </div>
@@ -285,25 +283,29 @@ import Card from "@components/base/Card.astro";
   <!-- Doctor -->
   <div x-show="activeCategory === 'all' || activeCategory === 'surgery'">
     <Card class="'p-4'">
-      <div
-        class="relative w-full h-40 rounded-lg bg-muted-200 dark:bg-muted-800"
-      >
+      <div class="relative w-full h-40 rounded-lg bg-muted-200 dark:bg-muted-800">
         <img
-          class="absolute bottom-0 inset-x-0 mx-auto w-full max-w-[170px] ptablet:max-w-[150px]"
-          src="/img/illustrations/doctors/doctor-6.svg"
+          class="absolute bottom-0 inset-x-0 mx-auto rounded-lg p-3 w-full max-w-[270px] ptablet:max-w-[150px]"
+          src="/img/illustrations/doctors/doctor-1.svg"
           alt="Doctor"
         />
+        <div class="absolute inset-0 flex items-center rounded-lg p-3 justify-center h-50 bg-black bg-opacity-60 text-white">
+          <div class="w-60% text-1xl font-semibold p-2  text-white">Launching Soon</div>
+          <div class="w-40% text-xs flex flex-col items-center justify-center border p-3 border-white rounded-lg">
+            <p class="text-rose-500">Sep</p>
+            <p>12</p>
+          </div>
+        </div>
       </div>
       <div class="font-sans mt-3">
         <h4 class="font-semibold text-muted-800 dark:text-muted-100">
-          Dr. Jenna Holloway
+          Manufacturing Excellence: Lean Principles and Beyond
         </h4>
-        <p class="text-sm text-muted-400">Surgeon</p>
+        
       </div>
       <div class="mt-2">
         <p class="text-sm ptablet:text-xs text-muted-500 dark:text-muted-400">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ergo illi
-          intellegunt quid
+          Apply AI-driven predictive maintenance and quality control systems to enhance manufacturing efficiencyd
         </p>
       </div>
       <div class="flex items-center justify-between font-sans mt-3">
@@ -316,23 +318,18 @@ import Card from "@components/base/Card.astro";
             ></i>
           </button>
           <button
-            tooltip="Send message"
+            tooltip="Share"
             class="h-8 w-8 rounded-full text-muted-400 hover:text-primary-500 hover:enabled:bg-muted-100 dark:hover:enabled:bg-muted-800 flex items-center justify-center tw-accessiblity transition-colors duration-300"
           >
-            <i class="iconify w-4 h-4" data-icon="ph:chat-circle-duotone"></i>
+            <i class="iconify w-4 h-4" data-icon="ph:share-duotone"></i>
           </button>
-          <button
-            tooltip="View profile"
-            class="h-8 w-8 rounded-full text-muted-400 hover:text-primary-500 hover:enabled:bg-muted-100 dark:hover:enabled:bg-muted-800 flex items-center justify-center tw-accessiblity transition-colors duration-300"
-          >
-            <i class="iconify w-4 h-4" data-icon="ph:user-duotone"></i>
-          </button>
+         
         </div>
         <div class="flex items-center justify-end gap-2">
-          <i class="iconify w-4 h-4 text-yellow-400" data-icon="uiw:star-on"
+          <i class="iconify w-4 h-4 text-primary-600" data-icon="uiw:time"
           ></i>
           <span class="font-semibold text-xs text-muted-500 dark:text-muted-400"
-            >4.9/5</span
+            >6 min of lecture</span
           >
         </div>
       </div>
@@ -341,25 +338,29 @@ import Card from "@components/base/Card.astro";
   <!-- Doctor -->
   <div x-show="activeCategory === 'all' || activeCategory === 'gynaecology'">
     <Card class="'p-4'">
-      <div
-        class="relative w-full h-40 rounded-lg bg-muted-200 dark:bg-muted-800"
-      >
+      <div class="relative w-full h-40 rounded-lg bg-muted-200 dark:bg-muted-800">
         <img
-          class="absolute bottom-0 inset-x-0 mx-auto w-full max-w-[170px] ptablet:max-w-[150px]"
-          src="/img/illustrations/doctors/doctor-7.svg"
+          class="absolute bottom-0 inset-x-0 mx-auto rounded-lg p-3 w-full max-w-[270px] ptablet:max-w-[150px]"
+          src="/img/illustrations/doctors/doctor-1.svg"
           alt="Doctor"
         />
+        <div class="absolute inset-0 flex items-center rounded-lg p-3 justify-center h-50 bg-black bg-opacity-60 text-white">
+          <div class="w-60% text-1xl font-semibold p-2  text-white">Launching Soon</div>
+          <div class="w-40% text-xs flex flex-col items-center justify-center border p-3 border-white rounded-lg">
+            <p class="text-rose-500">Sep</p>
+            <p>12</p>
+          </div>
+        </div>
       </div>
       <div class="font-sans mt-3">
         <h4 class="font-semibold text-muted-800 dark:text-muted-100">
-          Dr. Howard Wright
+          Machine Learning in Data-Driven Tech Decision Making
         </h4>
-        <p class="text-sm text-muted-400">Gynaecologist</p>
+        
       </div>
       <div class="mt-2">
         <p class="text-sm ptablet:text-xs text-muted-500 dark:text-muted-400">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ergo illi
-          intellegunt quid
+          Uncover the role of machine learning in making data-driven decisions within the tech industry.
         </p>
       </div>
       <div class="flex items-center justify-between font-sans mt-3">
@@ -372,23 +373,18 @@ import Card from "@components/base/Card.astro";
             ></i>
           </button>
           <button
-            tooltip="Send message"
+            tooltip="Share"
             class="h-8 w-8 rounded-full text-muted-400 hover:text-primary-500 hover:enabled:bg-muted-100 dark:hover:enabled:bg-muted-800 flex items-center justify-center tw-accessiblity transition-colors duration-300"
           >
-            <i class="iconify w-4 h-4" data-icon="ph:chat-circle-duotone"></i>
+            <i class="iconify w-4 h-4" data-icon="ph:share-duotone"></i>
           </button>
-          <button
-            tooltip="View profile"
-            class="h-8 w-8 rounded-full text-muted-400 hover:text-primary-500 hover:enabled:bg-muted-100 dark:hover:enabled:bg-muted-800 flex items-center justify-center tw-accessiblity transition-colors duration-300"
-          >
-            <i class="iconify w-4 h-4" data-icon="ph:user-duotone"></i>
-          </button>
+          
         </div>
         <div class="flex items-center justify-end gap-2">
-          <i class="iconify w-4 h-4 text-yellow-400" data-icon="uiw:star-on"
+          <i class="iconify w-4 h-4 text-primary-600" data-icon="uiw:time"
           ></i>
           <span class="font-semibold text-xs text-muted-500 dark:text-muted-400"
-            >4.8/5</span
+            >5 min of lecture</span
           >
         </div>
       </div>
@@ -397,25 +393,29 @@ import Card from "@components/base/Card.astro";
   <!-- Doctor -->
   <div x-show="activeCategory === 'all' || activeCategory === 'cardiology'">
     <Card class="'p-4'">
-      <div
-        class="relative w-full h-40 rounded-lg bg-muted-200 dark:bg-muted-800"
-      >
+      <div class="relative w-full h-40 rounded-lg bg-muted-200 dark:bg-muted-800">
         <img
-          class="absolute bottom-0 inset-x-0 mx-auto w-full max-w-[170px] ptablet:max-w-[150px]"
-          src="/img/illustrations/doctors/doctor-8.svg"
+          class="absolute bottom-0 inset-x-0 mx-auto rounded-lg p-3 w-full max-w-[270px] ptablet:max-w-[150px]"
+          src="/img/illustrations/doctors/doctor-1.svg"
           alt="Doctor"
         />
+        <div class="absolute inset-0 flex items-center rounded-lg p-3 justify-center h-50 bg-black bg-opacity-60 text-white">
+          <div class="w-60% text-1xl font-semibold p-2  text-white">Launching Soon</div>
+          <div class="w-40% text-xs flex flex-col items-center justify-center border p-3 border-white rounded-lg">
+            <p class="text-rose-500">Sep</p>
+            <p>12</p>
+          </div>
+        </div>
       </div>
       <div class="font-sans mt-3">
         <h4 class="font-semibold text-muted-800 dark:text-muted-100">
-          Dr. Kyle Adams
+          Leading Tech Teams: AI-Enhanced Leadership Skills
         </h4>
-        <p class="text-sm text-muted-400">Cardiologist</p>
+        
       </div>
       <div class="mt-2">
         <p class="text-sm ptablet:text-xs text-muted-500 dark:text-muted-400">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ergo illi
-          intellegunt quid
+          Learn how AI can augment leadership skills in tech team management.
         </p>
       </div>
       <div class="flex items-center justify-between font-sans mt-3">
@@ -428,23 +428,18 @@ import Card from "@components/base/Card.astro";
             ></i>
           </button>
           <button
-            tooltip="Send message"
+            tooltip="Share"
             class="h-8 w-8 rounded-full text-muted-400 hover:text-primary-500 hover:enabled:bg-muted-100 dark:hover:enabled:bg-muted-800 flex items-center justify-center tw-accessiblity transition-colors duration-300"
           >
-            <i class="iconify w-4 h-4" data-icon="ph:chat-circle-duotone"></i>
+            <i class="iconify w-4 h-4" data-icon="ph:share-duotone"></i>
           </button>
-          <button
-            tooltip="View profile"
-            class="h-8 w-8 rounded-full text-muted-400 hover:text-primary-500 hover:enabled:bg-muted-100 dark:hover:enabled:bg-muted-800 flex items-center justify-center tw-accessiblity transition-colors duration-300"
-          >
-            <i class="iconify w-4 h-4" data-icon="ph:user-duotone"></i>
-          </button>
+          
         </div>
         <div class="flex items-center justify-end gap-2">
-          <i class="iconify w-4 h-4 text-yellow-400" data-icon="uiw:star-on"
+          <i class="iconify w-4 h-4 text-primary-600" data-icon="uiw:time"
           ></i>
           <span class="font-semibold text-xs text-muted-500 dark:text-muted-400"
-            >4.7/5</span
+            >5 min of lecture</span
           >
         </div>
       </div>
@@ -453,25 +448,29 @@ import Card from "@components/base/Card.astro";
   <!-- Doctor -->
   <div x-show="activeCategory === 'all' || activeCategory === 'general'">
     <Card class="'p-4'">
-      <div
-        class="relative w-full h-40 rounded-lg bg-muted-200 dark:bg-muted-800"
-      >
+      <div class="relative w-full h-40 rounded-lg bg-muted-200 dark:bg-muted-800">
         <img
-          class="absolute bottom-0 inset-x-0 mx-auto w-full max-w-[170px] ptablet:max-w-[150px]"
-          src="/img/illustrations/doctors/doctor-9.svg"
+          class="absolute bottom-0 inset-x-0 mx-auto rounded-lg p-3 w-full max-w-[270px] ptablet:max-w-[150px]"
+          src="/img/illustrations/doctors/doctor-1.svg"
           alt="Doctor"
         />
+        <div class="absolute inset-0 flex items-center rounded-lg p-3 justify-center h-50 bg-black bg-opacity-60 text-white">
+          <div class="w-60% text-1xl font-semibold p-2  text-white">Launching Soon</div>
+          <div class="w-40% text-xs flex flex-col items-center justify-center border p-3 border-white rounded-lg">
+            <p class="text-rose-500">Sep</p>
+            <p>12</p>
+          </div>
+        </div>
       </div>
       <div class="font-sans mt-3">
         <h4 class="font-semibold text-muted-800 dark:text-muted-100">
-          Dr. Emma Callaway
+          AI and Automation: Reshaping Tech Project Delivery
         </h4>
-        <p class="text-sm text-muted-400">Generalist</p>
+        
       </div>
       <div class="mt-2">
         <p class="text-sm ptablet:text-xs text-muted-500 dark:text-muted-400">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ergo illi
-          intellegunt quid
+          Dive into how AI and automation are reshaping the way tech projects are delivered.
         </p>
       </div>
       <div class="flex items-center justify-between font-sans mt-3">
@@ -484,23 +483,18 @@ import Card from "@components/base/Card.astro";
             ></i>
           </button>
           <button
-            tooltip="Send message"
+            tooltip="Share"
             class="h-8 w-8 rounded-full text-muted-400 hover:text-primary-500 hover:enabled:bg-muted-100 dark:hover:enabled:bg-muted-800 flex items-center justify-center tw-accessiblity transition-colors duration-300"
           >
-            <i class="iconify w-4 h-4" data-icon="ph:chat-circle-duotone"></i>
+            <i class="iconify w-4 h-4" data-icon="ph:share"></i>
           </button>
-          <button
-            tooltip="View profile"
-            class="h-8 w-8 rounded-full text-muted-400 hover:text-primary-500 hover:enabled:bg-muted-100 dark:hover:enabled:bg-muted-800 flex items-center justify-center tw-accessiblity transition-colors duration-300"
-          >
-            <i class="iconify w-4 h-4" data-icon="ph:user-duotone"></i>
-          </button>
+          
         </div>
         <div class="flex items-center justify-end gap-2">
-          <i class="iconify w-4 h-4 text-yellow-400" data-icon="uiw:star-on"
+          <i class="iconify w-4 h-4 text-primary-600" data-icon="uiw:time"
           ></i>
           <span class="font-semibold text-xs text-muted-500 dark:text-muted-400"
-            >4.3/5</span
+            >5 min of lecture</span
           >
         </div>
       </div>
@@ -509,25 +503,29 @@ import Card from "@components/base/Card.astro";
   <!-- Doctor -->
   <div x-show="activeCategory === 'all' || activeCategory === 'general'">
     <Card class="'p-4'">
-      <div
-        class="relative w-full h-40 rounded-lg bg-muted-200 dark:bg-muted-800"
-      >
+      <div class="relative w-full h-40 rounded-lg bg-muted-200 dark:bg-muted-800">
         <img
-          class="absolute bottom-0 inset-x-0 mx-auto w-full max-w-[170px] ptablet:max-w-[150px]"
-          src="/img/illustrations/doctors/doctor-10.svg"
+          class="absolute bottom-0 inset-x-0 mx-auto rounded-lg p-3 w-full max-w-[270px] ptablet:max-w-[150px]"
+          src="/img/illustrations/doctors/doctor-1.svg"
           alt="Doctor"
         />
+        <div class="absolute inset-0 flex items-center rounded-lg p-3 justify-center h-50 bg-black bg-opacity-60 text-white">
+          <div class="w-60% text-1xl font-semibold p-2  text-white">Launching Soon</div>
+          <div class="w-40% text-xs flex flex-col items-center justify-center border p-3 border-white rounded-lg">
+            <p class="text-rose-500">Sep</p>
+            <p>12</p>
+          </div>
+        </div>
       </div>
       <div class="font-sans mt-3">
         <h4 class="font-semibold text-muted-800 dark:text-muted-100">
-          Dr. Nasseer Al Hussein
+          AI-Infused Marketing: Shaping the Future of Tech Promotion
         </h4>
-        <p class="text-sm text-muted-400">Generalist</p>
+        
       </div>
       <div class="mt-2">
         <p class="text-sm ptablet:text-xs text-muted-500 dark:text-muted-400">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ergo illi
-          intellegunt quid
+          Discover how AI is shaping the future of tech marketing and customer engagement
         </p>
       </div>
       <div class="flex items-center justify-between font-sans mt-3">
@@ -540,23 +538,18 @@ import Card from "@components/base/Card.astro";
             ></i>
           </button>
           <button
-            tooltip="Send message"
+            tooltip="Share"
             class="h-8 w-8 rounded-full text-muted-400 hover:text-primary-500 hover:enabled:bg-muted-100 dark:hover:enabled:bg-muted-800 flex items-center justify-center tw-accessiblity transition-colors duration-300"
           >
-            <i class="iconify w-4 h-4" data-icon="ph:chat-circle-duotone"></i>
+            <i class="iconify w-4 h-4" data-icon="ph:share-duotone"></i>
           </button>
-          <button
-            tooltip="View profile"
-            class="h-8 w-8 rounded-full text-muted-400 hover:text-primary-500 hover:enabled:bg-muted-100 dark:hover:enabled:bg-muted-800 flex items-center justify-center tw-accessiblity transition-colors duration-300"
-          >
-            <i class="iconify w-4 h-4" data-icon="ph:user-duotone"></i>
-          </button>
+          
         </div>
         <div class="flex items-center justify-end gap-2">
-          <i class="iconify w-4 h-4 text-yellow-400" data-icon="uiw:star-on"
+          <i class="iconify w-4 h-4 text-primary-600" data-icon="uiw:time"
           ></i>
           <span class="font-semibold text-xs text-muted-500 dark:text-muted-400"
-            >4.9/5</span
+            >5 min of lecture</span
           >
         </div>
       </div>
@@ -565,25 +558,29 @@ import Card from "@components/base/Card.astro";
   <!-- Doctor -->
   <div x-show="activeCategory === 'all' || activeCategory === 'surgery'">
     <Card class="'p-4'">
-      <div
-        class="relative w-full h-40 rounded-lg bg-muted-200 dark:bg-muted-800"
-      >
+      <div class="relative w-full h-40 rounded-lg bg-muted-200 dark:bg-muted-800">
         <img
-          class="absolute bottom-0 inset-x-0 mx-auto w-full max-w-[170px] ptablet:max-w-[150px]"
-          src="/img/illustrations/doctors/doctor-11.svg"
+          class="absolute bottom-0 inset-x-0 mx-auto rounded-lg p-3 w-full max-w-[270px] ptablet:max-w-[150px]"
+          src="/img/illustrations/doctors/doctor-1.svg"
           alt="Doctor"
         />
+        <div class="absolute inset-0 flex items-center rounded-lg p-3 justify-center h-50 bg-black bg-opacity-60 text-white">
+          <div class="w-60% text-1xl font-semibold p-2  text-white">Launching Soon</div>
+          <div class="w-40% text-xs flex flex-col items-center justify-center border p-3 border-white rounded-lg">
+            <p class="text-rose-500">Sep</p>
+            <p>12</p>
+          </div>
+        </div>
       </div>
       <div class="font-sans mt-3">
         <h4 class="font-semibold text-muted-800 dark:text-muted-100">
-          Dr. Kevin Wheeler
+          Tech Entrepreneurship 2.0: Navigating with AI Insights
         </h4>
-        <p class="text-sm text-muted-400">Surgeon</p>
+        
       </div>
       <div class="mt-2">
         <p class="text-sm ptablet:text-xs text-muted-500 dark:text-muted-400">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ergo illi
-          intellegunt quid
+          Explore how AI insights are transforming the landscape for tech entrepreneurs.
         </p>
       </div>
       <div class="flex items-center justify-between font-sans mt-3">
@@ -596,23 +593,18 @@ import Card from "@components/base/Card.astro";
             ></i>
           </button>
           <button
-            tooltip="Send message"
+            tooltip="Share"
             class="h-8 w-8 rounded-full text-muted-400 hover:text-primary-500 hover:enabled:bg-muted-100 dark:hover:enabled:bg-muted-800 flex items-center justify-center tw-accessiblity transition-colors duration-300"
           >
-            <i class="iconify w-4 h-4" data-icon="ph:chat-circle-duotone"></i>
+            <i class="iconify w-4 h-4" data-icon="ph:share-duotone"></i>
           </button>
-          <button
-            tooltip="View profile"
-            class="h-8 w-8 rounded-full text-muted-400 hover:text-primary-500 hover:enabled:bg-muted-100 dark:hover:enabled:bg-muted-800 flex items-center justify-center tw-accessiblity transition-colors duration-300"
-          >
-            <i class="iconify w-4 h-4" data-icon="ph:user-duotone"></i>
-          </button>
+          
         </div>
         <div class="flex items-center justify-end gap-2">
-          <i class="iconify w-4 h-4 text-yellow-400" data-icon="uiw:star-on"
+          <i class="iconify w-4 h-4 text-primary-600" data-icon="uiw:time"
           ></i>
           <span class="font-semibold text-xs text-muted-500 dark:text-muted-400"
-            >4.3/5</span
+            >5 min of lecture</span
           >
         </div>
       </div>
@@ -621,25 +613,29 @@ import Card from "@components/base/Card.astro";
   <!-- Doctor -->
   <div x-show="activeCategory === 'all' || activeCategory === 'dermatology'">
     <Card class="'p-4'">
-      <div
-        class="relative w-full h-40 rounded-lg bg-muted-200 dark:bg-muted-800"
-      >
+      <div class="relative w-full h-40 rounded-lg bg-muted-200 dark:bg-muted-800">
         <img
-          class="absolute bottom-0 inset-x-0 mx-auto w-full max-w-[170px] ptablet:max-w-[150px]"
-          src="/img/illustrations/doctors/doctor-12.svg"
+          class="absolute bottom-0 inset-x-0 mx-auto rounded-lg p-3 w-full max-w-[270px] ptablet:max-w-[150px]"
+          src="/img/illustrations/doctors/doctor-1.svg"
           alt="Doctor"
         />
+        <div class="absolute inset-0 flex items-center rounded-lg p-3 justify-center h-50 bg-black bg-opacity-60 text-white">
+          <div class="w-60% text-1xl font-semibold p-2  text-white">Launching Soon</div>
+          <div class="w-40% text-xs flex flex-col items-center justify-center border p-3 border-white rounded-lg">
+            <p class="text-rose-500">Sep</p>
+            <p>12</p>
+          </div>
+        </div>
       </div>
       <div class="font-sans mt-3">
         <h4 class="font-semibold text-muted-800 dark:text-muted-100">
-          Dr. Adam Grant
+          AI-Enabled Sales: Elevating Tech Productivity
         </h4>
-        <p class="text-sm text-muted-400">Dermatologist</p>
+        
       </div>
       <div class="mt-2">
         <p class="text-sm ptablet:text-xs text-muted-500 dark:text-muted-400">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ergo illi
-          intellegunt quid
+          Learn how AI is elevating sales productivity and customer interactions in the tech sector.
         </p>
       </div>
       <div class="flex items-center justify-between font-sans mt-3">
@@ -652,23 +648,18 @@ import Card from "@components/base/Card.astro";
             ></i>
           </button>
           <button
-            tooltip="Send message"
+            tooltip="Share"
             class="h-8 w-8 rounded-full text-muted-400 hover:text-primary-500 hover:enabled:bg-muted-100 dark:hover:enabled:bg-muted-800 flex items-center justify-center tw-accessiblity transition-colors duration-300"
           >
-            <i class="iconify w-4 h-4" data-icon="ph:chat-circle-duotone"></i>
+            <i class="iconify w-4 h-4" data-icon="ph:share-duotone"></i>
           </button>
-          <button
-            tooltip="View profile"
-            class="h-8 w-8 rounded-full text-muted-400 hover:text-primary-500 hover:enabled:bg-muted-100 dark:hover:enabled:bg-muted-800 flex items-center justify-center tw-accessiblity transition-colors duration-300"
-          >
-            <i class="iconify w-4 h-4" data-icon="ph:user-duotone"></i>
-          </button>
+          
         </div>
         <div class="flex items-center justify-end gap-2">
-          <i class="iconify w-4 h-4 text-yellow-400" data-icon="uiw:star-on"
+          <i class="iconify w-4 h-4 text-primary-600" data-icon="uiw:time"
           ></i>
           <span class="font-semibold text-xs text-muted-500 dark:text-muted-400"
-            >4.9/5</span
+            >5 min of lecture</span
           >
         </div>
       </div>

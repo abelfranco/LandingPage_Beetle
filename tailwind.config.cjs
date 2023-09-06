@@ -72,6 +72,16 @@ module.exports = {
         '.slimscroll-opaque::-webkit-scrollbar-thumb': {
           background: 'rgba(0, 0, 0, 0) !important',
         },
+        // Aplicar el modo oscuro y escala de grises a la barra de desplazamiento
+        '.slimscroll-dark::-webkit-scrollbar-thumb': {
+          borderRadius: '.75rem',
+          background: 'rgba(255, 255, 255, 0.1)', // Cambia esto al color de fondo deseado en modo oscuro
+        },
+        '.slimscroll-gray::-webkit-scrollbar-thumb': {
+          borderRadius: '.75rem',
+          background: 'gray', // Cambia esto al color de escala de grises deseado
+        
+        },
         '.mask': {
           'mask-size': 'contain',
           'mask-repeat': 'no-repeat',
