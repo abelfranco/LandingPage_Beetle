@@ -1,0 +1,164 @@
+---
+import Layout from "@layouts/Default.astro";
+import ButtonMain from "@components/base/ButtonMain.astro";
+import HeroMain from "@components/hero/HeroMain.astro";
+import SectionMuted from "@components/section/SectionMuted.astro";
+import Container from "@components/section/Container.astro";
+import SectionTitle from "@components/section/SectionTitle.astro";
+import IconBlock from "@components/content/IconBlock.astro";
+import Toolbar from "@components/content/doctors/grid/Toolbar.astro";
+import Filters from "@components/content/doctors/grid/Filters.astro";
+import Grid from "@components/content/doctors/grid/Grid.astro";
+import SideStatsRight from "@components/content/features/SideStatsRight.astro";
+import SideStatsLeft from "@components/content/features/SideStatsLeft.astro";
+import Pricing from "@components/content/Pricing.astro";
+import Cta from "@components/content/Cta.astro";
+import Testimonials from "@components/content/Testimonials.astro";
+---
+
+<Layout title="Home">
+  <HeroMain />
+
+  <SectionMuted>
+    <Container>
+      <SectionTitle
+        title="Everything you need in one place"
+        subtitle="Hello, Manager of the Future! Make the most of technology and learn how to use AI tools with our wide range of articles. The sky's the limit."
+        minititle="On-Demand Content"
+      />
+
+      <div class="grid md:grid-cols-3 ltablet:grid-cols-4 lg:grid-cols-4 gap-x-6 gap-y-12" x-intersect="activeStep = ''">
+        <!-- Item -->
+        <div>
+          <IconBlock
+            title="AI in Agile Project Management"
+            text="Explore how AI-driven project management tools and techniques are transforming project planning, execution, and monitoring in the tech industry."
+            icon="ph:note"
+            class="'text-primary-600'"
+          />
+        </div>
+        <!-- Item -->
+        <div>
+          <IconBlock
+            title="AI-Enhanced Product Development"
+            text="Discover how AI is revolutionizing the product management process, from ideation and design to launch and optimization"
+            icon="ph:robot-duotone"
+            class="'text-rose-500'"
+          />
+        </div>
+        <!-- Item -->
+        <div>
+          <IconBlock
+            title="Optimizing Tech Operations with AI"
+            text="Highlight how AI-powered solutions are streamlining technology operations management, including network monitoring, server maintenance, and cybersecurity."
+            icon="ph:gear-duotone"
+            class="'text-primary-600'"
+          />
+        </div>
+        <!-- Item -->
+        <div>
+          <IconBlock
+            title="AI-Driven Innovation Strategies"
+            text="Explore the role of AI in shaping innovation and technology strategies, including identifying emerging trends, assessing market opportunities, and fostering digital transformation."
+            icon="ph:rocket-duotone"
+            class="'text-rose-500'"
+          />
+        </div>
+        <!-- Item -->
+        <div>
+          <IconBlock
+            title="AI for Data Scientist"
+            text="Discover how AI tools are improving data analysis, helping managers make data-driven decisions, and enhancing business intelligence in tech companies."
+            icon="ph:brain-duotone"
+            class="'text-primary-600'"
+          />
+        </div>
+        <!-- Item -->
+        <div>
+          <IconBlock
+            title="AI-Powered Resource Management"
+            text="Explore how artificial intelligence is optimizing resource allocation, including personnel, budget, and technology assets, in tech-driven projects and operations."
+            icon="ph:person-duotone"
+            class="'text-rose-500'"
+          />
+        </div>
+        <!-- Item -->
+        <div>
+          <IconBlock
+            title="AI for Risk Management"
+            text="Learn how AI can identify and mitigate risks in tech projects, ensuring smoother operations and better outcomes."
+            icon="ph:money-duotone"
+            class="'text-primary-600'"
+          />
+        </div>
+        <!-- Item -->
+        <div>
+          <IconBlock
+            title="AI for Team Collaboration"
+            text="Highlight AI-driven collaboration tools and platforms that facilitate communication, knowledge sharing, and teamwork among tech management professionals."
+            icon="ph:pencil-duotone"
+            class="'text-rose-500'"
+          />
+        </div>
+      </div>
+    </Container>
+  </SectionMuted>
+
+  <SectionMuted class="'border-b border-muted-200 dark:border-muted-800'">
+    <Container>
+      <SectionTitle
+        title="Articles"
+        subtitle="Discover articles tailored to your role in Tech Industry Management."
+        minititle="Explore our"
+        class="'mx-auto text-center'"
+      />
+
+      <div id="doctors" x-data="doctors()"  x-intersect="activeStep = 'spy-1'">
+        <Toolbar />
+
+        <!--Grid wrapper-->
+        <div class="py-10">
+          <div class="grid grid-cols-12 md:gap-12 pb-20">
+            <!--Filters-->
+            <div class="hidden lg:block col-span-12 lg:col-span-3">
+              <Filters />
+            </div>
+            <!--Content-->
+            <div class="col-span-12 lg:col-span-9">
+              <!--Subgrid-->
+              <Grid />
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </Container>
+  </SectionMuted>
+
+  <SectionMuted class="'overflow-hidden'">
+    <Container>
+      <div class="py-10">
+        <SideStatsRight />
+        <SideStatsLeft />
+      </div>
+    </Container>
+  </SectionMuted>
+
+  <SectionMuted>
+    <Container>
+      <SectionTitle
+        title="Philosophy"
+        subtitle="Our philosophy is based on two essential pillars: Process innovation and Purpose-driven leadership"
+        minititle="PlaneaLab´s"
+        class="'mx-auto text-center'"
+      />
+      <Testimonials />
+    </Container>
+  </SectionMuted>
+
+  <SectionMuted>
+    <Container>
+      <Cta />
+    </Container>
+  </SectionMuted>
+</Layout>

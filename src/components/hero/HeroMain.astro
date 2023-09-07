@@ -10,7 +10,7 @@ import HeroMainModuleOne from "@components/hero/HeroMainModuleOne.astro";
       autoplay 
       loop 
       muted 
-      class="hidden dark:block w-full h-full ltablet:max-w-[1920px] max-w-[1270px] mx-auto"
+      class="hidden dark:block w-full h-full ltablet:max-w-[3840px] max-w-[2160px] mx-auto"
     >
       <source src="/img/illustrations/background_1.mp4" type="video/mp4" />
     </video>
@@ -33,7 +33,7 @@ import HeroMainModuleOne from "@components/hero/HeroMainModuleOne.astro";
       
       <!-- Centramos los botones horizontalmente -->
       <div class="flex justify-center">
-        <ButtonMain to={"/home"} class="'min-w-[130px]'">
+        <ButtonMain to={"../components/content/hero/index.astro"} class="'min-w-[130px]'">
           Get Started
         </ButtonMain>
         <ButtonSub to={"/home"} class="'min-w-[130px]'">
